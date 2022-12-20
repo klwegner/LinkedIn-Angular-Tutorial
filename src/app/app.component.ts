@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'mw-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.Emulated //this is the default mode; css is applied to its component only
 })
-export class AppComponent {
-  title = 'LinkedIn-Angular-Tutorial';
-}
+export class AppComponent {}
